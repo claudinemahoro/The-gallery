@@ -17,4 +17,5 @@ class Photographer(models.Model):
         for photographer in photographers:
             return photographer
 
-
+    class Meta:
+        ordering=['first_name']
