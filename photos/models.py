@@ -22,7 +22,6 @@ class Photographer(models.Model):
 
 class Location(models.Model):
     photo_location=models.CharField(max_length=30)
-
     def save_location(self):
         self.save()
     def delete_location(self):
@@ -34,3 +33,5 @@ class Location(models.Model):
     def get_location_id(cls,id):
         locate=Location.objects.get(pk=id)
         return locate
+    def __str__(self):
+        return self.photo_location
