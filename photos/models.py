@@ -23,4 +23,5 @@ class Photographer(models.Model):
 class Location(models.Model):
     photo_location=models.CharField(max_length=30)
 
-    
+    def save_location(self):
+        self.save()
