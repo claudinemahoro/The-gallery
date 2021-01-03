@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Image
 # Create your views here.
 def location (request,id):
     location=Image.filter_by_location(id=id)
