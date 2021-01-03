@@ -6,3 +6,7 @@ def location (request,id):
     print(location)
     locate=Location.objects.all()
     return render(request,'location.html',{"location":location,'locate':locate})
+
+def welcome(request):
+    images=Image.get_all_image()
+    return render(request,'welcome.html',{"images":images})
