@@ -9,6 +9,8 @@ class Photographer(models.Model):
         return self.first_name
     def save_photographer(self):
         self.save()
+    def delete_photographer(self):
+        self.delete()
     
         
 
