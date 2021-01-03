@@ -19,3 +19,8 @@ class Photographer(models.Model):
 
     class Meta:
         ordering=['first_name']
+
+class Location(models.Model):
+    photo_location=models.CharField(max_length=30)
+
+    
