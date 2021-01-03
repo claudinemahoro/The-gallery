@@ -35,3 +35,6 @@ class Location(models.Model):
         return locate
     def __str__(self):
         return self.photo_location
+
+class Category(models.Model):
+    photo_category=models.CharField(max_length=30)
