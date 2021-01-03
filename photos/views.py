@@ -10,3 +10,14 @@ def location (request,id):
 def welcome(request):
     images=Image.get_all_image()
     return render(request,'welcome.html',{"images":images})
+
+def search_results(request):
+    if 'image' in request.GET and request.GET["image"]:
+        search_term=request.GET.get("image")
+        searched_photos=Image.search_by_category(search_term)
+        message=f"{search_term}"
+        print(searched_photos)        
+        return render(request,"search.html",{"message":message,"photos":searched_photos})
+    else:
+        message="You haven't searched for any image"
+        return render(request,'search.html',{"message":message})
