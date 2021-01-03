@@ -27,3 +27,6 @@ class Location(models.Model):
         self.save()
     def delete_location(self):
         self.delete()
+    def update_location(self,update):
+        self.photo_location=update
+        self.save()
