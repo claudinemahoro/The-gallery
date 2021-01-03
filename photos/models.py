@@ -11,6 +11,10 @@ class Photographer(models.Model):
         self.save()
     def delete_photographer(self):
         self.delete()
-    
-        
+    @classmethod
+    def display_photographers(cls):
+        photographers=Photographer.objects.all()
+        for photographer in photographers:
+            return photographer
+
 
