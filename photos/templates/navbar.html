@@ -9,25 +9,17 @@
 <nav class="navbar navbar-inverse" style="background-color: #EEEDE7;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="{% url 'welcome' %}">HOME </a>
+      <a class="navbar-brand" href="{% url 'welcome' %}" style="color: black;">HOME </a>
       <!-- from bootstrap -->
       <!-- <li class="nav-item dropdown"> -->
-          <a class="nav-link dropdown-toggle , navbar-brand" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <a class="nav-link dropdown-toggle , navbar-brand" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
           LOCATION</a>
-          <!-- <div>
-            <button class="btn-btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</button>
-            <span class="caret"></span>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          {% for location in locate %}
-          <li><a href="/location/{{location.id}}">{{location.location}}</a></li>
-          {% endfor %}
-        </ul>
-      </div> -->
+  
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/location/1">Africa</a>
-            <a class="dropdown-item" href="/location/2">Europe</a>
-            <a class="dropdown-item" href="/location/3">Asia</a>
-            <a class="dropdown-item" href="/location/4">America</a>
+            <a class="dropdown-item" href="/location/1" style="color: black;font-size: medium;">Africa</a>
+            <a class="dropdown-item" href="/location/2" style="color: black;font-size: medium;">Europe</a>
+            <a class="dropdown-item" href="/location/3" style="color: black;font-size: medium;">Asia</a>
+            <a class="dropdown-item" href="/location/4" style="color: black;font-size: medium;">America</a>
           </div>
         <!-- </li> -->
       <!-- end -->
