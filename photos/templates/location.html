@@ -6,6 +6,7 @@
 {% for photo_item in images %}
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
     <img src="{{photo_item.image.url}}" data-toggle="modal" class="img-responsive" alt="Image" style="width: 400px; height: 300px;" class="image"data-toggle="modal" data-target="#{{photo_item.id}}">
+    <h1>{{photo_item.title}}</h1>
 </div>
 {%  endfor %}
   <!-- modal from bootstrap website -->
