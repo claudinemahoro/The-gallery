@@ -22,7 +22,7 @@ Claudine MAHORO
 * css
 * Postgres SQLALchemy
 # Link to heroku
-
+https://theothergallery.herokuapp.com/
 
 ## License
 MIT License
